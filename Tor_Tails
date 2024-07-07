@@ -25,11 +25,50 @@ whistleblowing and secure communication in oppressive regimes.
 
 
 
-Terminologies
+Q  what is Terminologies?
 Privacy - It refers to the ability of individuals or groups to maintain control over their personal
 information and activities, and to keep them private and free from surveillance or unwanted intrusion.
 
+Anonymity - It refers to the condition or state of being anonymous, which means being unidentified or
+untraceable. It is the ability to engage in activities or express oneself without revealing one's true identity
+or personal information.
 
+
+Q what  is Tor ? -------------<>><><>><><><>
+
+1::TOR, short for The Onion Router, is a network and software project that aims to provide
+anonymous communication over the Internet.
+
+2::It was initially developed by the U.S. Naval Research Laboratory and has since been
+maintained and further developed by a volunteer community.
+
+3::By routing internet traffic through multiple relays, TOR aims to provide anonymity and
+privacy. It can help protect your identity, location, and online activities from being easily
+traced back to you.
+
+4::TOR is commonly used by individuals seeking to bypass censorship, access blocked websites,
+maintain anonymity while browsing, or protect their privacy. It is also used by journalists,
+activists, and whistleblowers who need to communicate securely and anonvmously.
+
+
+Q what is ISP ??
+Ans::
+ISP stands for Internet Service Provider. It is a company or organization that provides
+internet access to individuals, businesses, and other entities. ISPs offer various types of
+internet connections, including broadband, DSL, cable, fiber optic, wireless, and satellite,
+depending on the available infrastructure and technology.
+
+
+Q what is Union Routing  ??  ------------<><><><>
+1::TOR works by routing internet traffic through a series of volunteer-operated servers called
+nodes or relays.
+
+2::When you use TOR, your internet traffic is encrypted and passed thro
+of which only knows the IP address of the previous and next relays in the chain
+
+
+3::This process is often referred to as "onion routing" because, like the la
+relay only has information about the adjacent relays.
 
 
 
