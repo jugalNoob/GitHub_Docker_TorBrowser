@@ -13,7 +13,7 @@ Author: jugalNoob <sjugal126@gmail.com>
 Date:   Sat Apr 27 21:12:05 2024 -0700
 
 
-6::git branch --> check branch
+6::git branch --> check branch      ---------------<><><>
 
 7::git diff -->check which code change in your file
 
@@ -28,6 +28,16 @@ Date:   Sat Apr 27 21:12:05 2024 -0700
 11::git checkout master -- * --> all 
 
 12::git checkout master -- inidex.py
+
+
+:::::: Git Amend ------>
+Amend the Commit:
+Once your changes are staged, use git commit --amend to incorporate them into the previous commit.
+
+git commit --amend
+
+git push --force
+
 
 
 
@@ -55,7 +65,6 @@ git reset --hard HEAD^(uncommit and discard the chnage)
 
 
 :::::::::::::: Logging in Git :::::::::::::
-
 1::git log #
 2::git log -p -2 (last two Commit with diff)
 3::git log --stat (summary of Chnages) all shwo changes
@@ -269,6 +278,58 @@ git checkout  master--> first go master
 git merge Deva -->merge in master
 
 git pull origin master
+
+
+
+
+Basic Commands:  -----------------------<><><><><>
+
+git init: Initialize a new Git repository.
+git clone: Clone a repository into a new directory.
+git add: Stage changes for the next commit.
+git commit: Record changes to the repository.
+git push: Push local commits to a remote repository.
+git pull: Fetch from and integrate with another repository or a local branch.
+git status: Show the working tree status.
+Branching and Merging:
+
+git branch: List, create, or delete branches.          -----------------------<><><><>
+git checkout: Switch branches or restore working tree files.
+git merge: Join two or more development histories together.
+git rebase: Reapply commits on top of another base tip.
+git cherry-pick: Apply changes introduced by some existing commits.
+Remote Repositories:
+
+Remote Repositories: ----------------------------<><><><>
+git remote: Manage set of tracked repositories.
+git fetch: Download objects and refs from another repository.
+git remote add: Add a remote repository.
+git remote -v: List remote repositories.
+
+
+Undoing Changes:-0----------------<><><>
+git reset: Reset current HEAD to the specified state.
+git revert: Revert some existing commits.
+git checkout -- <file>: Discard changes in the working directory.
+Advanced Topics:
+
+Advanced Topics: -------------<><><>
+git stash: Stash changes in a dirty working directory away.
+git bisect: Use binary search to find the commit that introduced a bug.
+git submodule: Initialize, update or inspect submodules.
+Configuration and Information:
+
+Configuration and Information: --------------<><><>
+git config: Get and set repository or global options.
+git log: Show commit logs.
+git diff: Show changes between commits, commit and working tree, etc.
+Collaboration:
+
+
+Forking a repository on GitHub/GitLab.
+Pull requests (PRs): Sending and reviewing code changes.
+Code reviews: Providing feedback on others' code changes.
+Handling merge conflicts: Resolving conflicts that occur when merging branches.
 
 
 
