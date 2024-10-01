@@ -333,6 +333,55 @@ Handling merge conflicts: Resolving conflicts that occur when merging branches.
 
 
 
+:::::::::::::::::::::::::::::::::::::::::::::::::::::: 2.0  Information :::::::::::::
+
+
+It looks like you've outlined a very comprehensive guide to using Git, covering a wide range of commands and scenarios from initialization, managing commits, branches, merging, undoing changes, and working with remote repositories like GitHub.
+
+Here’s a summary of key sections from your guide, which may help in organizing the content:
+
+Basic Git Commands:
+git init: Initialize a Git repository.
+git add: Stage changes for commit.
+git commit -m "message": Commit changes with a message.
+git status: Check the status of files (staged, unstaged).
+
+
+git log: Show commit history.
+git diff: Show changes between commits or the working tree.
+git restore: Discard changes in the working directory or staging area.
+
+
+Branching and Merging:
+git branch <branch>: Create a new branch.
+git checkout <branch>: Switch to a different branch.
+git merge <branch>: Merge a branch into the current branch.
+git push origin <branch>: Push branch changes to a remote repository.
+
+
+Undoing Changes:
+git restore .: Undo changes in all files.
+git reset --soft HEAD^: Undo the last commit but keep changes.
+git reset --hard HEAD^: Undo the last commit and discard changes.
+
+
+Working with Remote Repositories:
+git remote add origin <url>: Link a local repository to a remote.
+git push -u origin main: Push the main branch to the remote repository.
+git pull: Pull changes from a remote repository.
+
+
+Logging and Debugging:
+git log -p: Show detailed commit logs including diffs.
+git log --stat: Show commit summary with file changes.
+git blame <file>: See who modified each line of a file.
+
+
+Git Configurations:
+git config --global user.name "Name": Set the global username for commits.
+git config --global user.email "email": Set the global email for commits.
+
+
 
 
 Ans: hi i am jugal sharma
