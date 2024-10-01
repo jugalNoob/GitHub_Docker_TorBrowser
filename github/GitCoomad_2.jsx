@@ -130,6 +130,64 @@ Customizes the output of the log to show:
 
 
 
+
+1. Handling Merge Conflicts ::::::::::::::::::::::::::: Very important ::::::::::::::::::::::::
+
+git branch <branch>: Create a new branch.
+git checkout <branch>: Switch to a different branch.
+git merge <branch>: Merge a branch into the current branch.
+git push origin <branch>: Push branch changes to a remote repository.
+    
+    
+When you encounter a merge conflict, Git will pause the merge process and ask you to resolve the conflicts.
+
+git merge <branch_name>: Attempts to merge the branch into your current branch.
+git status: Shows files with merge conflicts.
+git diff <file>: Shows the differences in the file with conflicts.
+Manually edit files: You'll need to manually edit the files to resolve the conflict. Conflicting sections will be marked with <<<<<<<, =======, and >>>>>>>.
+git add <file>: Once resolved, add the file to stage it.
+git merge --continue: Continue the merge after resolving conflicts.
+git merge --abort: Abort the merge if you decide not to merge the branch.
+
+    
+
+
+8. Tagging ::::::::::::::::::::::::::::::::::::: Important 
+
+    
+Tags are used to mark specific points in the commit history as important, often used for releases.
+
+git tag <tagname>: Create a lightweight tag.
+git tag -a <tagname> -m "message": Create an annotated tag with a message.
+git push origin <tagname>: Push a tag to the remote repository.
+git tag -d <tagname>: Delete a local tag.
+git push origin --delete <tagname>: Delete a remote tag.
+    
+
+
+  4. Git Cherry-Pick :::::::::::::::::::::::::::::::::::::::
+
+Cherry-picking is a way to apply a specific commit from one branch to another branch.
+
+git cherry-pick <commit_hash>: Apply a specific commit to the current branch.
+If conflicts arise, resolve them and continue using git cherry-pick --continue.
+  
+
+3. Stashing Changes::::::::::::::::::::::::::::::::::::::::::::::::::
+  
+Sometimes you need to switch branches but don't want to commit your current changes. You can "stash" your changes and apply them later.
+
+git stash: Stash your changes (saves them temporarily).
+git stash list: List all stashed changes.
+git stash apply: Apply the most recent stash to your current working directory.
+git stash apply stash@{2}: Apply a specific stash from the list.
+git stash drop: Drop the most recent stash.
+git stash pop: Apply the most recent stash and remove it from the stash list.
+
+  
+  
+
+
 Handling Mistakes in Git (Negative Cases)::::::::::::::::::::::::::::::::::::::::::::::
 
     
@@ -252,7 +310,15 @@ git push <remote_name> <branch_name>: Push changes to a remote repository
    
     
 
+2. Rebasing a Branch:::::::::::::::::::::::
 
+  
+Rebasing is an alternative to merging that integrates changes from one branch to another by moving 
+  the base of the branch to the current commit of another.
+
+git rebase <branch_name>: Rebase your current branch onto the specified branch.
+git rebase --continue: Continue the rebase process after resolving conflicts.
+git rebase --abort: Abort the rebase if conflicts are too complex or you want to stop.
   
     
     
@@ -293,7 +359,15 @@ git status --ignored  >>> Importanat
 4:::temp*: Any file starting with "temp" will be ignored (e.g., temp1.txt, tempfile.js).
 5:::node_modules/: This will ignore all node_modules/ folders across the project, which is common for Node.js projects.
 
-  
+
+
+  Q how to add your email and name in github? ::::::::::::::::::::::::::::::::::
+
+...git config --global user.name “[firstname lastname]”
+
+...git config --global user.email “[valid-email]”
+
+...git config --global color.ui auto
     
     
 
