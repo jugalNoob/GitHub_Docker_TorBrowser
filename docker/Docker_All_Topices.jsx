@@ -1,3 +1,166 @@
+2. Docker Images :::::::::::::::::::::::::::::::::::
+
+..List all images:
+
+docker images
+
+...Pull an image from Docker Hub:
+docker pull [image-name]
+
+....Build an image from a Dockerfile:
+
+docker build -t [image-name]:[tag] .
+Example: docker build -t myapp:v1 .
+  
+....Tag an image: 
+docker tag [image-id] [username]/[repository-name]:[tag]
+Example: docker tag abcd1234 myuser/myapp:v1
+
+...Remove an image:
+docker rmi [image-name]
+Example: docker rmi myapp:v1
+
+...Inspect an image: 
+docker inspect [image-name]
+
+
+...Push an image to Docker Hub: 
+docker push [username]/[repository-name]:[tag]
+Example: docker push myuser/myapp:v1
+
+
+::::::  2 Docker Container ::::::::::::::
+
+...Run a container:
+
+docker run [image-name]
+Example: docker run nginxf
+
+
+...Run a container with a custom name:
+
+
+10. Inspecting and Debugging :::::::::::::::::::::::::::::::::::::::::::
+
+  
+...Inspect a container:
+
+docker inspect [container-id]
+
+
+...View container logs:
+docker logs [container-id]
+
+
+...View real-time container logs:
+docker logs -f [container-id]
+
+
+...View resource usage (CPU, Memory) of containers:
+docker stats
+
+
+5. Docker Networks ::::::::::::::::::::::::::::::::::::::::::::::::::::
+Commands
+
+
+....List all networks:
+docker network ls
+
+
+...Create a network:
+docker network create [network-name]
+Example: docker network create mynetwork
+
+....Run a container on a specific network:
+docker run --network [network-name] [image-name]
+Example: docker run --network mynetwork nginx
+
+...Connect a running container to a network:
+docker network connect [network-name] [container-id]
+
+
+...Disconnect a running container from a network:
+docker network disconnect [network-name] [container-id]
+
+
+...Inspect a network:
+docker network inspect [network-name]
+
+
+...Remove a network:
+docker network rm [network-name]
+
+
+
+
+
+7. Docker Swarm (Orchestration) :::::::::::::::::::::::::::::
+Commands
+
+...Initialize Docker Swarm:
+docker swarm init
+
+
+...Join a Docker Swarm:
+docker swarm join --token [token] [manager-ip]:[port]
+
+
+....List nodes in a swarm:
+docker node ls
+
+
+...Deploy a stack:
+
+docker stack deploy -c [compose-file.yml] [stack-name]
+
+
+...List services in a stack:
+
+docker stack services [stack-name]
+
+
+...Remove a stack:
+docker stack rm [stack-name]
+
+
+
+
+
+:::::::::::::::: New Feature in docker   ::::::::::::::::::::::::::::::::::
+
+
+1::1. Docker Scout
+
+Commands:
+....Analyze a local Docker image:
+
+docker scout cves [image]
+Example: docker scout cves myapp:latest
+
+
+2::22. Docker Build for Cloud (Buildx)
+...Build an image for multiple platforms:
+
+docker buildx build --platform linux/amd64,linux/arm64 -t [image-name] .
+Example: docker buildx build --platform linux/amd64,linux/arm64 -t myapp:multiarch .
+
+
+3:33. Docker Debug
+
+.....Attach to a running container for debugging:
+docker exec -it [container-id] /bin/bash
+
+
+::::4. Docker Desktop for Cloud-Native Development :":::
+
+
+
+::::5. Docker BuildKit (Faster Builds) 
+
+
+
+
 
 Docker is an open-source platform designed to automate the deployment, scaling, and management of applications within lightweight, portable containers. It allows developers to package their applications and dependencies into a standardized unit (a container) that can run on any system with Docker installed, regardless of the environment. Here's a breakdown of Docker and its key concepts:
 
