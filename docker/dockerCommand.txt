@@ -4,6 +4,20 @@
 
 
 
+::::::: Upload Loadimage in docker ::::::::::::::::::::
+
+
+1:::https://hub.docker.com/repository/docker/allwegood/myapp/tags
+
+
+docker tag react myuser/myapp:latest 
+
+docker login 
+
+docker push allwegood/myapp:latest
+
+docker pull allwegood/myapp:latest
+
 
 
 
