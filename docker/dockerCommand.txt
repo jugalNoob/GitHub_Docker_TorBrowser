@@ -6,6 +6,7 @@
 // /Users/sjuga/Documents/All_Programming/docker:/app base-app
 // docker run --name react -p 3000:3000 --rm -v C:\Users\sjuga\Documents\All_Programming\docker:/app my-react-app  --> update your code
 
+docker build -t my-react-app /Users/sjuga/Documents/All_Programming/docker
 
 
 
